@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for your favorite Anime</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="head">
+        <nav>
+            <div class="Logo">
+                <img src="../src/res/Untitled design.png" id="logo" alt="logo"/>
+                <h1 id="logoslogan">Adamos</h1>
+            </div>
+            <ul>
+                <li><a href="#Home" style="color:deeppink;">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#animes">animes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="expandmore">
+        <a href="#categoriesSection"><img src="/project/src/res/expand_more_FILL0_wght400_GRAD0_opsz48.svg"></a>
+    </div>
+        <main>
+            <div class="mainheader">
+                <img src="res/animegraph.png" id="animegraph">
+                <h1>
+                    <div class="animbox"><span id="one">Do you love anime?</span></div><br> <span id="two">Explore and find new anime series that align with your preferences to watch.</span></h1>
+            </div>
+        </main>
+        <br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <section class="categoriesSection" id="categoriesSection">
+            <h1>Available Categories</h1>
+            <div class="categorie">
+                <p id="Action">Action</p>
+                <p id="Adventure">Adventure</p>
+                <p id="Comedy">Comedy</p>
+                <p id="Drama">Drama</p>
+                <p id="Fantasy">Fantasy</p>
+                <p id="Romance">Romance</p>
+                <p id="Slice of life">Slice of life</p>
+                <p id="supernatural">supernatural</p>
+                <p id="Mecha">Mecha</p>
+                <p id="Mystery">Mystery</p>
+                <p id="Isekai">Isekai</p>
+                <p id="Horror">Horror</p>
+                <p id="Psychological">Psychological</p>
+                <p id="School">School</p>
+                <p id="Magic">Magic</p>
+                <p id="Superpowers">Superpowers</p>
+            </div>
+            <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        </section>
+        <section class="animesearchBar">
+            <div class="inputform">
+                <input id="search" type="text" placeholder="Search for...">
+                <input placeholder="categorie" type="text" list="search_categorie">
+                <datalist id="search_categorie">
+                    <option id="Action">Action</option>
+                    <option id="Adventure">Adventure</option>
+                    <option id="Comedy">Comedy</option>
+                    <option id="Drama">Drama</option>
+                    <option id="Fantasy">Fantasy</option>
+                    <option id="Romance">Romance</option>
+                    <option id="Slice of life">Slice of life</option>
+                    <option id="supernatural">supernatural</option>
+                    <option id="Mecha">Mecha</option>
+                    <option id="Mystery">Mystery</option>
+                    <option id="Isekai">Isekai</option>
+                    <option id="Horror">Horror</option>
+                    <option id="Psychological">Psychological</option>
+                    <option id="School">School</option>
+                    <option id="Magic">Magic</option>
+                    <option id="Superpowers">Superpowers</option>
+                </datalist>
+                <button type="text" id="submitSearch">Search</button>
+            </div>
+                <p id="sit">All time popular for me</p>
+                <div class="animegrid">
+                <div id="anime1" data-reference="anime1">
+                    <a href="">
+                        <img src="https://imagizer.imageshack.com/img922/7185/cUQyi3.jpg" alt="Demon Slayer: Kimetsu no Yaiba">
+                    </a>
+                    <p id="animename">Demon Slayer: Kimetsu no Yaiba</p>
+                </div>
+                <div id="anime1" data-reference="anime2">
+                    <a href="">
+                        <img src="https://imagizer.imageshack.com/img923/1302/Uqwb3c.jpg" alt="One piece">
+                    </a>
+                    <p id="animename">One piece</p>
+                </div>
+                <div id="anime1" data-reference="anime3">
+                    <a href="">
+                        <img src="https://imagizer.imageshack.com/img922/696/c9cyx3.jpg" alt="Attack on titan">
+                    </a>
+                    <p id="animename">Attack on titan</p>
+                </div>
+                <div id="anime1" data-reference="anime4">
+                    <a href="">
+                        <img src="https://imagizer.imageshack.com/img923/4185/vVxEi5.jpg" alt="Death Note">
+                    </a>
+                    <p id="animename">Death Note</p>
+                </div>
+            </div>
+        </section>
+    <script src="search.js"></script>
+</body>
+</html>

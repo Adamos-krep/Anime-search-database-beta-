@@ -1,0 +1,283 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --font-OpenSans:'Open Sans', sans-serif;
+    --font-Roboto:'Roboto', sans-serif;
+    --font-Unique:'Montserrat Alternates', sans-serif;
+    --Main-Color:rgb(223, 219, 219);
+}
+
+body{
+    background-image:url("/project/src/res/night-1280x720-sky-moon-stars-forest-4k-17037.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding:20px;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+ul li{
+    padding:30px;
+}
+
+.Logo{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor:pointer;
+}
+
+#logo{
+    width:100px;
+    border-radius:50%;
+    border:1px solid black;
+}
+
+#logoslogan{
+    color:rgb(223, 219, 219);
+    font-family: var(--font-Unique);
+    font-size:3em;
+}
+
+nav ul a, li{
+    display:inline;
+    text-decoration:none;
+    font-family:var(--font-Roboto);
+    opacity: 0.7;
+    list-style: none;
+    color:white;
+    transition:0.4s opacity;
+}
+
+li,a:hover{
+    color:deeppink;
+    opacity: 1;
+}
+
+
+nav ul a::after{
+    content:'';
+    display:block;
+    width:0;
+    background-color:deeppink;
+    height:2px;
+    transition:0.3s width;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+
+/*?Main section*/
+.mainheader{
+    display:flex;
+    align-items: center;
+    height:70vh;
+}
+
+#animegraph{
+    width:25em;
+}
+
+.mainheader h1{
+    text-align: center;
+    font-family:var(--font-Unique);
+    color:rgb(27, 177, 214);
+}
+
+.mainheader #two{
+    text-shadow:10px 5px 7px rgb(0, 0, 0);
+}
+
+.mainheader #one{
+    background: rgb(160,65,255);
+    background: radial-gradient(circle, rgba(160,65,255,1) 0%, rgba(245,57,57,1) 95%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.animbox{
+    animation: shake 2s infinite;
+}
+
+@keyframes shake{
+    0% { transform: rotate(0deg); }
+   25% { transform: rotate(3deg); }
+   50% { transform: rotate(0deg); }
+   75% { transform: rotate(-3deg); }
+   100% { transform: rotate(0deg); }
+}
+
+/*?Anime categorie section*/
+.categoriesSection{
+    background-color:rgb(2, 2, 2);
+    padding:10px;
+}
+
+.categoriesSection h1{
+    color:violet;
+    text-align:center;
+    padding:3em;
+    text-decoration:underline;
+    text-underline-offset: 20px;
+    font-size:2.5em;
+    font-family:var(--font-OpenSans);
+}
+.categorie{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 20em 20em 20em 20em;
+    grid-template-rows:5em 5em 5em 5em;
+}
+
+.categorie p{
+    padding:10px;
+    margin:20px;
+    font-family:var(--font-Roboto);
+    font-size:16px;
+    background-color: var(--Main-Color);
+    width:8em;
+    text-align: center;
+    cursor:pointer;
+    box-shadow: 5px 5px 0 rgb(194, 150, 150);
+    transition:0.4s box-shadow;
+}
+
+.categorie p:hover{
+    box-shadow: 0 0 0 rgb(194, 150, 150);
+}
+
+.expandmore{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:13em;
+}
+
+.expandmore img{
+    cursor:pointer;
+    transition:0.3s border;
+}
+
+.expandmore img:hover{
+    border:1px solid aqua;
+    border-radius: 20px;
+}
+
+.animesearchBar{
+    background-color:rgb(226, 225, 225);
+    height:100vh;
+}
+
+.inputform{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top:8em;
+}
+
+.inputform input, button{
+    padding:10px;
+    margin:10px;
+}
+
+.inputform input{
+    width:20%;
+    font-family:var(--font-OpenSans);
+    font-size:16px;
+    outline:none;
+    border-radius: 10px;
+    background-color: rgb(119, 119, 250);
+    border:2px solid rgb(15, 15, 17);
+}
+
+.inputform input::placeholder{
+    color:black;
+}
+
+.inputform button{
+    font-family:var(--font-OpenSans);
+    font-size:20px;
+    padding:10px;
+    background-color: rgb(43, 43, 236);
+    cursor: pointer;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px 5px 0 rgb(3, 3, 3);
+    transition:0.4s box-shadow;
+}
+
+.inputform button:hover{
+    box-shadow: 0 0 0 rgb(5, 5, 5);
+}
+
+/*?Anime grid style*/
+.animegrid img{
+    width:160px;
+}
+
+.animegrid{
+    font-family: var(--font-OpenSans);
+}
+
+#anime1{
+    width:fit-content;
+    text-align: center;
+}
+
+#sit{
+    font-family: var(--font-Unique);
+    color:rgb(70, 65, 65);
+    margin-left:8em;
+    padding:20px;
+    margin-top: 10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#anime1 p{
+    transition: 0.4s color;
+    cursor:pointer;
+}
+
+#anime1 p:hover{
+    color:brown;
+}
+
+.animegrid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5px; 
+    place-items: center;
+}
+
+.animegrid img{
+    height:15em;
+    border-radius: 5px;
+    box-shadow:1px 1px 5px black;
+}
